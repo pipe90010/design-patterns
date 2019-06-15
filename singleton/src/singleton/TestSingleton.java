@@ -18,5 +18,11 @@ public class TestSingleton {
 		ThreadSafeSingleton2 tss2 = ThreadSafeSingleton2.getInstance();
 		tss2.printMessage();
 		
+		DoubleCheckedTSS DcTss = DoubleCheckedTSS.getInstance();
+		DcTss.printMessage();
+		
+		IODHolderIdiom _IODHI = IODHolderIdiom.getInstance();
+		_IODHI.printMessage();
+		
 	}
 }
