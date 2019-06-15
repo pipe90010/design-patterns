@@ -1,14 +1,14 @@
 package singleton;
 
 public class EagerSingleton {
-	private static  EagerSingleton singleton = new  EagerSingleton();
+	private static  EagerSingleton instance = new  EagerSingleton();
 	
 	private EagerSingleton() {
 		
 	}
 	
-	public static EagerSingleton getEagerSingleton() {
-		return singleton;
+	public static EagerSingleton getInstance() {
+		return instance;
 	}
 	
 	public void printMessage(){
